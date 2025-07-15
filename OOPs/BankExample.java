@@ -12,6 +12,17 @@ class BankAccount{
         accoutType = _accountType;
     }
 
+    //  setters
+    public void setBalance(double balance){
+        this.balance = balance;
+
+    }
+
+    // getters
+    public double getBalance(){
+        return balance;
+    }
+
     public void printBalance(){
         System.out.println(balance);
     }
@@ -27,10 +38,11 @@ public class BankExample {
 
     public static void main(String[] args){
         BankAccount accountPerson1 = new BankAccount(200);
+        accountPerson1.setBalance(300);
         accountPerson1.printBalance();
 
         BankAccount accountPerson2 = new BankAccount(300, "current");
-        accountPerson2.printBalance();
+        // accountPerson2.printBalance();
         accountPerson2.printAccoutType();
     }
     
