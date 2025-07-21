@@ -11,7 +11,9 @@ public class ArraysList {
 
     //deleting
     alist.remove(2);
-    System.err.println(alist); 
+    // System.out.println(alist); 
+
+    System.out.println(alist.contains(7));
 
     // you can get list when you click alist. they give a lot of collection
    }  
